@@ -1,4 +1,4 @@
-// //Revisão de operadores 
+// //Revisão de operadores
 
 // let a = 2;
 // let b = 1;
@@ -126,10 +126,162 @@
 
 //---- exemplo 2
 
-let fruta1 = "banana"
-let fruta2 = "mamaão"
+// let fruta1 = "banana"
+// let fruta2 = "mamaão"
 
-function vitamina (fruta1, fruta2){
-    console.log(`Quero uma vitamina de ${fruta1} com ${fruta2}`)
-}
-vitamina(fruta1 , fruta2)
+// function vitamina (fruta1, fruta2){
+//     console.log(`Quero uma vitamina de ${fruta1} com ${fruta2}`)
+// }
+// vitamina(fruta1 , fruta2)
+
+
+//FUNÇÃO COM PARÂMETRO 
+
+//ex 1
+
+// function mostrarNome(nome){
+// console.log(`Meu nome é ` + nome)
+// }
+// mostrarNome(`Batata`)
+
+//ex2
+
+// function mostrarAnimais(animal1, animal2, animal3){
+//    console.log("Esses são meus animais:" + animal1, animal2, animal3) 
+// }
+// mostrarAnimais("macaco","papagaio", "papagaio")
+
+//macaco = animal1
+//girafa = animal2
+//papagaio = animal3
+
+//ex3
+
+// function nomeDaFuncao(valor){
+// console.log("Mostra pra mim o meu valor " + valor)
+// }
+
+// nomeDaFuncao("1real")
+
+//ex4
+
+// function nomeParaMinhaFuncao(guarda_um_espaco_que_ainda_nao_sei_qual_e_o_valor){
+// console.log("Mostra pra mim, qual é o meu valor: " + guarda_um_espaco_que_ainda_nao_sei_qual_e_o_valor)
+// }
+// nomeParaMinhaFuncao("amendoim")
+
+
+//FUNÇÃO COM RETURN
+
+// ex1
+// function dobro(numero){ //criei uma função com o nome dobro, guardei no parâmetro o (numero - uma caixinha que está reservada para receber uma informação) 
+//     return numero * 2 //retorna pra mim essa caixinha(numero) * 2
+// }
+
+// ex2
+
+// console.log(dobro(2)) //pedi para o meu console mostrar a minha função (dobro), e coloquei o 2 para ser o valor da caixinha (numero) 
+
+// ex3
+
+// function triplo (numero2){
+//     return numero2 * 3
+// }
+// console.log(triplo(15))
+
+
+
+//UTILIZANDO VARIÁVEL DENTRO DE UM PARÂMETRO 
+
+//ex1
+
+
+// let hortfruti = `Morango` //declarando uma variável
+
+// function mostrarFruta(fruta){ //chamei a função e dentro do parâmetro dela() definimos como valor "fruta"
+// console.log(`Eu sou a fruta: ${fruta}`)
+// }
+// mostrarFruta(hortfruti) //chamamos a variável como argumento na chamada da função.
+// //Dessa forma redefinimos o valor do parâmetro () como o valor da variável.
+
+
+//ex2
+
+// let concessionaria = "Honda"
+
+// function mostrarConcessionaria (marca){
+//     console.log(`Minha concessionaria trabalha com a marca: ${marca}`)
+// }
+// mostrarConcessionaria(concessionaria)
+
+
+//Switch - É uma estrutura condicional. Avalia uma expressão, combinando o valor da expressão para a cláusula case, e executa as instruções associadas ao case.
+
+//Estrutura básica do switch
+
+// switch (variável){
+//     case condição:
+//         console.log (ação)
+//         break //fechamento da condição (Se for verdadeira)
+//defaul: se não for, me mostra uma mensagem.
+// }
+//Se a condição for verdadeira, executar a {tarefa}
+
+//ex1
+
+// let fruta = "Melão"
+
+// switch (fruta) {
+//     case "Abacaxi":
+//         console.log("Tem certeza que é essa fruta?")
+//         break; //se for a fruta certa, para aqui.
+//     default: //se não for, me mostra uma mensagem
+//         console.log("Não trabalhamos com essa fruta")
+// }
+
+//ex2
+
+// let carro = "uno"
+// switch (carro) {
+//     case "uno":
+//         console.log("Você é um uninho")
+//         break; //parar
+//     default:
+//         console.log("Você não é pálio para o uninho")
+// }
+
+//ex3
+
+// let idade = 24
+// switch (idade) {
+//     case 26:
+//         console.log("Você é maior de idade")
+//         break;
+//     case 17:
+//         console.log("Você é menor de idade")
+//         break;
+//     default:
+//         console.log("Não foi possível verificar")
+// }
+
+//ex4
+
+// let mercado = "leite"
+
+// switch (mercado){
+//     case "pão":
+//         console.log("Sim, temos esse produto!")
+//         break;
+//         default: 
+//         console.log(`O produto que tenho é só  ${mercado}`)
+// }
+
+//Dinâmica
+// Uma pessoa decidiu ir à uma revenda comprar um perfume. Ele deseja comprar um perfume amadeirado, e a revenda possui, além de perfumes amadeirados, florais, cítrico e frutal. Utilizando uma estrutura switch/case, caso o comprador queira o floral,retorne: “Compra efetuada com sucesso”. Nas outras opções, retorne: “Tem certeza que não prefere outro aroma?”. Caso seja especificado um aroma que não está disponível, retorne no console: “Não trabalhamos com este tipo de perfume aqui”
+
+
+
+
+
+//Para treinar!!!
+// Crie uma variável chamada “food”. Esta variável deve receber uma string com o nome de uma comida. Após, crie uma estrutura condicional switch que receba esta variável e que possua três casos: caso lasanha, retorne no console: “Não vendemos esta comida aqui”. Caso pizza, retorne: “Estamos com escassez de pizza” e caso salada, retorne: “Aqui está, são 3 reais”. Teste com estas três opções e verifique o console do seu navegador. Crie também um default , que retornará uma mensagem de erro no console. 
